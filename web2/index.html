@@ -10,13 +10,15 @@
     <body>
 
         <header>
-            <img id="logo" src="../main/data/logo.png" alt="logo" />
-            <div id="header_title">Второе задание</div>
+            <div id="header_content">
+                <div id="header_title" class="vert-center">Второе задание</div>
+                <a href="/"><img id="logo" class="vert-center" src="../main/data/new-logo.png" alt="logo" /></a>
+            </div>
         </header>
 
         <nav class="main_content">
-            <a href="/">Главная</a>
-            <a href="/edu/web1">Первый проект</a>
+            <a href="/">Главная</a> |
+            <a href="/edu/web1">Первый проект</a> |
             <a href="/edu/web2">Второй проект</a>
         </nav>
 
@@ -62,21 +64,42 @@
 
         <div class="main_content">
             <table>
-                <tr>
+                <tr class="odd_row">
                     <th>Колонка 1</th>
                     <th>Колонка 2</th>
-                    <th>Колонка 1</th>
-                    <th>Колонка 1</th>
-                    <th>Колонка 1</th>
+                    <th>Колонка 3</th>
                 </tr>
-                <tr>
+                <tr class="even_row">
                     <td>Ячейка 11</td>
                     <td>Ячейка 12</td>
-
+                    <td>Ячейка 13</td>
                 </tr>
-                <tr>
+                <tr class="odd_row">
                     <td>Ячейка 21</td>
                     <td>Ячейка 22</td>
+                    <td>Ячейка 23</td>
+                </tr>
+                <tr class="even_row">
+                    <td>Ячейка 31</td>
+                    <td>Ячейка 32</td>
+                    <td>Ячейка 33</td>
+                </tr>
+                <tr class="odd_row">
+                    <td>Ячейка 41</td>
+                    <td colspan="2" rowspan="2">Объединенная ячейка 42</td>
+                </tr>
+                <tr class="even_row">
+                    <td>Ячейка 51</td>
+                </tr>
+                <tr class="odd_row">
+                    <td>Ячейка 61</td>
+                    <td>Ячейка 62</td>
+                    <td>Ячейка 63</td>
+                </tr>
+                <tr class="even_row">
+                    <td>Ячейка 71</td>
+                    <td>Ячейка 72</td>
+                    <td>Ячейка 73</td>
                 </tr>
             </table>
         </div>
@@ -158,7 +181,7 @@
         </div>
 
         <footer>
-            <div id="footer_title">© Захаров Павел 2019</div>
+            <div id="footer_title" class="vert-center">© Павел Захаров 2019</div>
         </footer>
 
     </body>
