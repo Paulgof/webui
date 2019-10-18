@@ -11,12 +11,12 @@
 </head>
 <body class="container-fluid">
 
-<header class="row justify-content-around justify-content-md-start mb-3 pt-2 pb-2">
+<header class="row justify-content-around justify-content-md-start mb-2 mb-md-3 pt-2 pb-2">
     <div id="header_title" class="align-self-center text-center order-2">Четвёртое задание</div>
     <a href="/"><img id="logo" class="align-self-center" src="../main/data/new-logo.png" alt="logo" /></a>
 </header>
 
-<nav class="main_content row navbar justify-content-around mx-md-auto mb-3">
+<nav class="main_content row navbar justify-content-around mx-md-auto mb-2 mb-md-3">
     <a href="/" class="nav-item col-12 col-md-2">Главная</a>
     <a href="/edu/web1" class="nav-item col-12 col-md-2">Первый проект</a>
     <a href="/edu/web3" class="nav-item col-12 col-md-2">Третий проект</a>
@@ -28,7 +28,7 @@
     <area shape="circle" coords="354,77,53" href="http://twitter.com" alt="Twitter" />
 </map>
 
-<div id="links" class="main_content row mx-md-auto mb-3 py-2">
+<div id="links" class="main_content row mx-md-auto mb-2 mb-md-3 py-2">
     <ol>
         <li><a href="http://example.com/">HTTP</a></li>
         <li><a href="https://example.com/">HTTPS</a></li>
@@ -62,9 +62,9 @@
 </div>
 
 
-<div class="row justify-content-around mx-md-auto">
-<div class="col-12 main_content justify-content-around order-2 order-md-1 p-0">
-<table class="table table-striped col-12 p-2">
+<div class="row justify-content-around mx-md-auto mb-0">
+<div class="col-12 main_content justify-content-around order-2 order-md-1 p-0 mb-0">
+<table class="table table-striped col-12 p-2 mb-2 mb-md-3">
     <tr>
         <th>Колонка 1</th>
         <th>Колонка 2</th>
@@ -105,32 +105,35 @@
 </table>
 </div>
 
-<div class="col-12 main_content mb-3 order-1 order-md-2 p-0">
+<div class="col-12 main_content mb-2 mb-md-3 order-1 order-md-2 p-0">
 <form method="POST" id="entity_form" class="p-2 col-12">
 
-    <label>
+
+    <label class="col-12 col-md-4">
         Имя:<br />
-        <input name="entity_name" />
+        <input class="col-12" name="entity_name" />
     </label><br />
 
-    <label>
+    <label class="col-12 col-md-4">
         E-mail:<br />
-        <input name="entity_email"
+        <input class="col-12"
+                name="entity_email"
                type="email"
                value="email@example.com" />
     </label><br />
 
-    <label>
+    <label class="col-12 col-md-4">
         Дата рождения:<br />
         <!--input name="entity_birth"
             type="date"
             value="2019-09-20" /-->
-        <input name="entity_birth"
+        <input class="col-12"
+               name="entity_birth"
                type="text"
                value="2019-09-20" />
-    </label><br />
+    </label><br /><br />
 
-    <div>
+    <div class="col-12">
     Пол:<br />
     <label><input type="radio" checked="checked"
                   name="gender-group" value="male" />
@@ -142,7 +145,6 @@
                   name="gender-group" value="xenos" />
         Другое</label><br />
     <br />
-    </div>
 
     Количество конечностей:<br />
     <label><input type="radio" checked="checked"
@@ -155,11 +157,13 @@
                   name="limbs" value="xenos_range" />
         Больше</label><br />
     <br />
+    </div>
 
-    <label>
+    <label class="col-12">
         Сверхспособности:
         <br />
-        <select name="superpowers"
+        <select class="col-12 col-md-8"
+                name="superpowers"
                 multiple="multiple">
             <option value="immortality">Бессмертие</option>
             <option value="de_materialism">Прохождение сквозь стены</option>
@@ -168,17 +172,19 @@
     </label><br />
     <br />
 
-    <label>
+    <label class="col-12">
         Биография:<br />
-        <textarea name="bio"></textarea>
+        <textarea class="col-12 col-md-8" name="bio"></textarea>
     </label><br />
     <br />
 
-    <label><input type="checkbox" name="check-1" />
+    <label class="col-12"><input type="checkbox" name="check-1" />
         с контрактом ознакомлен</label><br />
     <br />
 
-    <input type="submit" value="Отправить" />
+    <div class="col-12">
+        <input type="submit" class="col-12 col-md-2 btn btn-primary" value="Отправить" />
+    </div>
 
 </form>
 </div>
