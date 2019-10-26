@@ -1,8 +1,26 @@
 body {
     font-family: Tahoma, sans-serif;
-    background-color: #575757;
-    color: #e8e6e3;
 }
 
 footer, header, body div {
+}
+
+#header_title {
+    font-size: x-large;
+}
+
+#header_subtitle {
+    font-size: small;
+}
+
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+
+    #header_title {
+        font-size: xx-large;
+    }
+
+    #header_subtitle {
+        font-size: medium;
+    }
+
 }
