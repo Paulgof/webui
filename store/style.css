@@ -5,12 +5,20 @@ body {
 footer, header, body div {
 }
 
+header a img {
+    width: 100px;
+}
+
 #header_title {
     font-size: x-large;
 }
 
 #header_subtitle {
     font-size: small;
+}
+
+.soc_links {
+    width: 50px;
 }
 
 @media screen and (min-width: 768px) and (min-device-width: 768px) {

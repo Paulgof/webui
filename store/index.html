@@ -11,30 +11,70 @@
 		<meta charset='UTF-8'/>
 	</head>
 	<body>
-		<header class="d-flex flex-row align-items-center justify-content-between px-2 py-2 px-md-4 py-md-4 mb-3 border-bottom shadow-sm">
-			<a href="/"><img width="100" class="d-block my-0 mr-md-auto" src="data/logo.png" alt="logo" /></a>
+		<header class="d-flex flex-row align-items-center justify-content-between px-2 py-2 px-md-4 mb-3 border-bottom shadow-sm">
+			<a href="/"><img class="d-block my-0 mr-md-auto" src="data/logo.png" alt="logo" /></a>
 			<div class="pr-3 pr-md-5">
-				<h1 id="header_title" class="text-center text-uppercase">Магизин штук</h1>
-				<h6 id="header_subtitle" class="text-right text-muted">by Kamiex Things Foundation<span class="d-none d-md-inline-block">®</span></h6>
+				<h1 id="header_title" class="text-center text-uppercase">Магазин штук</h1>
+				<h6 id="header_subtitle" class="text-right text-muted">by KamiexThings Foundation<span class="d-none d-md-inline-block">®</span></h6>
 			</div>
-
 		</header>
-		<div>
-			<nav>
-				Navigation
+		<div class="mx-auto col-md-9">
+			<nav class="nav mb-3 justify-content-center py-0 flex-column flex-md-row justify-content-md-around p-1 p-md-3">
+				<a href="https://kamiex.tech/" class="nav-link ">Главная</a>
+				<a href="#calc" class="nav-link " >Калькулятор</a>
+				<a href="#contacts" class="nav-link ">Контакты</a>
 			</nav>
-			<ol>
-				List
-			</ol>
-			<form>
+			<ul class="list-group">
+				<li class="card">
+					<img class="card-img-top" src="data/item1.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">Штука</h4>
+						<p class="card-text">
+							Самое первое что приходит на ум, если вы забыли название чего-либо.
+							Купите Штуку™, чтобы всегда иметь её под рукой в самый неподходящий момент.
+						</p>
+						<p>#место для отзыва</p>
+					</div>
+				</li>
+				<li class="card my-2">
+					<img class="card-img-top" src="data/item2.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">Штуковина</h4>
+						<p class="card-text">
+							Нужно описать какую-нибудь модель или абстракцию, но уровень собеседника слишком низок?
+							Наша Штуковина™ поможет Вам! Но помните, что поставщик не отвечает за Ваш собственный
+							уровень (чего бы то ни было), поэтому качество продукта для разных покупателей может
+							отличаться.
+						</p>
+						<p>#место для отзыва</p>
+					</div>
+				</li>
+				<li class="card">
+					<img class="card-img-top"  src="data/item3.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h4 class="card-title">Штучка+</h4>
+						<p class="card-text">
+							Почему Штучка+™? По многочисленным просьбам мы взяли всё самое лучшее из других наших
+							продуктов и смешали это воедино! Почуствуй истинную силу Абстракции!
+						</p>
+						<p>#место для отзыва</p>
+					</div>
+				</li>
+			</ul>
+			<form id="calc">
 				Form
 			</form>
 			<table>
 				<caption>Table</caption>
 			</table>
 		</div>
-		<footer class="py-4 border-top">
-			Footer
+		<footer id="contacts" class="py-2 py-md-4 px-3 border-top">
+			<div class="mx-auto mb-md-3 col-md-9 nav justify-content-center pr-0">
+				<a class="nav-item m-3" href="https://vk.com/"><img class="soc_links" src="data/vk.svg" alt="vk logo" /></a>
+				<a class="nav-item m-3" href="https://twitter.com/"><img class="soc_links" src="data/twitter.svg" alt="twitter logo" /></a>
+				<a class="nav-item m-3" href="https://github.com/Paulgof/webui"><img class="soc_links" src="data/github.svg" alt="github logo" /></a>
+			</div>
+			<h5 class="text-center">© Павел Захаров 2019</h5>
 		</footer>
 	</body>
 </html>
