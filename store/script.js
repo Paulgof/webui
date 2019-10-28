@@ -59,7 +59,7 @@ function updatePrice() {
         if (amount.value !== "") {
             price = basisPrice * parseInt(amount.value);
         }
-        document.getElementById("rBasisPrice").innerHTML = basisPrice + "₽";
+        document.getElementById("rBasisPrice").innerHTML = basisPrice + "$";
     } else {
         hideFlexBootstrapElement(radioDiv);
         showFlexBootstrapElement(checkDiv);
@@ -73,11 +73,11 @@ function updatePrice() {
         if (amount.value !== "") {
             price = basisPrice * parseInt(amount.value);
         }
-        document.getElementById("cBasisPrice").innerHTML = basisPrice + "₽";
+        document.getElementById("cBasisPrice").innerHTML = basisPrice + "$";
     }
 
     let totalPrice = document.getElementById("totalPrice");
-    totalPrice.innerHTML = price + "₽";
+    totalPrice.innerHTML = price + "$";
 
 
 }

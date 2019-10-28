@@ -33,7 +33,7 @@
 						</p>
 						<p>#место для отзыва</p>
 					</div>
-					<div class="card-footer text-right">Цена: 150‎₽</div>
+					<div class="card-footer text-right">Цена: 150‎$</div>
 				</li>
 				<li class="card my-2 shadow-sm">
 					<img class="card-img-top" src="data/item2.jpg" alt="Card image cap">
@@ -47,7 +47,7 @@
 						</p>
 						<p>#место для отзыва</p>
 					</div>
-					<div class="card-footer text-right">Цена: 200‎₽</div>
+					<div class="card-footer text-right">Цена: 200‎$</div>
 				</li>
 				<li class="card shadow-sm">
 					<img class="card-img-top"  src="data/item3.jpg" alt="Card image cap">
@@ -59,36 +59,36 @@
 						</p>
 						<p>#место для отзыва</p>
 					</div>
-					<div class="card-footer text-right">Цена: 299‎₽</div>
+					<div class="card-footer text-right">Цена: 299‎$</div>
 				</li>
 			</ul>
-			<form id="calc" class="my-3 shadow-sm border-bottom p-3">
+			<form id="calc" class="my-3 shadow-sm border-bottom p-3" action="javascript:void(-1)">
 				<div class="input-group">
 					<label class="w-75 pr-1">
 						<select id="thingSelector" class="custom-select">
-							<option value="thing1">Штука 	(150‎₽)</option>
-							<option value="thing2">Штуковина (200‎₽)</option>
-							<option value="thing3">Штучка+ 	(299₽)</option>
+							<option value="thing1">Штука 	(150‎$)</option>
+							<option value="thing2">Штуковина (200‎$)</option>
+							<option value="thing3">Штучка+ 	(299$)</option>
 						</select>
 					</label>
 					<div class="input-group-append w-25">
 						<label>
-							<input id="thingsAmount" type="text" class="form-control" placeholder="кол." />
+							<input id="thingsAmount" type="number" class="form-control" placeholder="кол." />
 						</label>
 					</div>
 				</div>
 				<div id="radios" class="d-flex flex-column m-2">
-					<label><input type="radio" name="prodOpts" checked value="option1"> Basic (0‎₽)</label>
-					<label><input type="radio" name="prodOpts" value="option2"> Advanced (20‎₽)</label>
-					<label><input type="radio" name="prodOpts" value="option3"> Superior (50₽)</label>
+					<label><input type="radio" name="prodOpts" checked value="option1"> Basic (0‎$)</label>
+					<label><input type="radio" name="prodOpts" value="option2"> Advanced (20‎$)</label>
+					<label><input type="radio" name="prodOpts" value="option3"> Superior (50$)</label>
 					<div class="text-muted">Цена одной Штуковины: <span id="rBasisPrice"></span></div>
 				</div>
 				<div id="checks" class="d-flex flex-column m-2">
-					<label><input type="checkbox" name="prop1"> Адаптивность (51₽)</label>
-					<label><input type="checkbox" name="prop2"> Интерактивность (101‎₽)</label>
+					<label><input type="checkbox" name="prop1"> Адаптивность (51$)</label>
+					<label><input type="checkbox" name="prop2"> Интерактивность (101‎$)</label>
 					<div class="text-muted">Цена одной Штучки+: <span id="cBasisPrice"></span></div>
 				</div>
-				<div class="d-flex my-2 border-top p-2 justify-content-between"><div>Итог:</div><span id="totalPrice">0₽</span></div>
+				<div class="d-flex my-2 border-top p-2 justify-content-between"><div>Итог:</div><span id="totalPrice">0$</span></div>
 			</form>
 		</div>
 		<footer id="contacts" class="py-2 py-md-4 px-3 border-top">
