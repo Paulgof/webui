@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://store.kamiex.tech/sitemap.xml
