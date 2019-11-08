@@ -17,6 +17,27 @@ header a img {
     font-size: small;
 }
 
+#gallery img {
+    display: block;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#gallery {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slick-prev:before {
+    color: black;
+    margin-right: -5px;
+}
+
+.slick-next:before {
+    color: black;
+    margin-left: -5px;
+}
+
 .soc_links {
     width: 50px;
 }

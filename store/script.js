@@ -82,7 +82,27 @@ function updatePrice() {
 
 }
 
+function gallery() {
+    $("#gallery").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ],
+    });
+}
+
 window.addEventListener("DOMContentLoaded", function () {
+
+    gallery();
 
     let radioDiv = document.getElementById("radios");
     hideFlexBootstrapElement(radioDiv);
