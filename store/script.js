@@ -1,5 +1,5 @@
 /*jslint devel: true */
-/*global define */
+/*global define, $, jQuery */
 
 function getPrices() {
     return {
@@ -96,7 +96,7 @@ function gallery() {
                     slidesToScroll: 2
                 }
             }
-        ],
+        ]
     });
 }
 
