@@ -4,7 +4,7 @@
       <strong>Успех!</strong> Ваши данные успешно отправлены!
     </div>
     <div id="error_message" class="alert alert-danger" role="alert">
-      <strong>Ошибка!</strong>
+      <strong>Ошибка!</strong> Пожалуйста, отправьте данные ещё раз.
     </div>
     <ModalForm />
     <Header />

@@ -62,8 +62,8 @@
         position: absolute;
         background-color: white;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: -50%;
+        transform: translate(-50%, -50%) scale(1);
     }
 
     #bPost {
@@ -74,6 +74,7 @@
         height: 40px;
         font-size: 14px;
         font-weight: 900;
+        transition: background-color 0.7s;
     }
 
     #bClose {
