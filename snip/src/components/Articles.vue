@@ -6,43 +6,19 @@
                 <p class="mt-5">Здесь будут представлены публикации для сельхозорганизаций и фермерских хозяйств</p>
                 <span class="green-underline clr-green">ВСЕ СТАТЬИ</span>
             </div>
-            <div class="article-card" id="first">
+            <div v-for="article in articlesList" v-bind:key="article.id" class="article-card" v-bind:style="{ backgroundImage: 'url(' + getPath(article.background) + ')', }">
                 <div>
                     <div>
-                        <h6 class="a-title">Ленты для капельного орошения: виды, особенности, правила выбора</h6>
-                        <p class="a-text">Капельный полив имеет массу преимуществ: обеспе...</p>
+                        <h6 class="a-title">{{ article.title }}</h6>
+                        <p class="a-text">{{ article.text }}</p>
                     </div>
-                    <div class="a-info d-flex justify-content-between">
-                        <span>15</span>
-                        <span>03.09.2019</span>
-                        <span>0 0</span>
-                    </div>
-                </div>
-            </div>
-            <div class="article-card" id="second">
-                <div>
-                    <div>
-                        <h6 class="a-title">Организация орошения в питомниках</h6>
-                        <p class="a-text">Технология полива культурных растений в питомни...</p>
-                    </div>
-                    <div class="a-info d-flex justify-content-between">
-                        <span>12</span>
-                        <span>13.08.2019</span>
-                        <span>1 0</span>
-                    </div>
-                </div>
-
-            </div>
-            <div class="article-card" id="third">
-                <div>
-                    <div>
-                        <h6 class="a-title">Методика расчета систем капельного орошения</h6>
-                        <p class="a-text">Эффективность функционирования системы капельно...</p>
-                    </div>
-                    <div class="a-info d-flex justify-content-between">
-                        <span>21</span>
-                        <span>13.08.2019</span>
-                        <span>1 0</span>
+                    <div class="a-info d-flex">
+                        <span class="w-25"><img src="../assets/img/eye.png" alt="eye"/> {{ article.views }}</span>
+                        <span class="flex-fill text-center">{{ article.date }}</span>
+                        <span class="w-25">
+                            <img src="../assets/img/like.png" alt="like"/>{{ article.likes }}
+                            <img src="../assets/img/dislike.png" alt="dislike"/>{{ article.dislikes }}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -52,23 +28,52 @@
 
 <script>
     export default {
-        name: "Articles"
+        name: "Articles",
+        methods: {
+            getPath(src) {
+                return require('../assets/img/' + src);
+            }
+        },
+        data() {
+            return {
+                articlesList: [
+                    {
+                        id: 1,
+                        title: "Ленты для капельного орошения: виды, особенности, правила выбора",
+                        text: "Капельный полив имеет массу преимуществ: обеспе...",
+                        views: 15,
+                        date: "03.09.2019",
+                        likes: 0,
+                        dislikes: 0,
+                        background: "file1.jpg"
+                    },
+                    {
+                        id: 2,
+                        title: "Организация орошения в питомниках",
+                        text: "Технология полива культурных растений в питомни...",
+                        views: 12,
+                        date: "13.08.2019",
+                        likes: 1,
+                        dislikes: 0,
+                        background: "file2.jpg"
+                    },
+                    {
+                        id: 3,
+                        title: "Методика расчета систем капельного орошения",
+                        text: "Эффективность функционирования системы капельно...",
+                        views: 21,
+                        date: "13.08.2019",
+                        likes: 1,
+                        dislikes: 0,
+                        background: "file3.jpg"
+                    },
+                ]
+            }
+        }
     }
 </script>
 
 <style scoped>
-
-    #first {
-        background-image: url('../assets/img/file1.jpg');
-    }
-
-    #second {
-        background-image: url('../assets/img/file2.jpg');
-    }
-
-    #third {
-        background-image: url('../assets/img/file3.jpg');
-    }
 
     .article-card {
         width: 260px;
@@ -113,6 +118,10 @@
         font-size: 28px;
         line-height: 1.1;
         box-sizing: border-box;
+    }
+
+    span > img {
+        width: 20px;
     }
 
     #title p {

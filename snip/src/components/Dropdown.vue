@@ -48,7 +48,6 @@
                         drop.classList.toggle("opened");
                     }
                     this.isDropSeen = false;
-                    window.console.log(drop);
                 } else {
                     if (this.isMobile()) {
                         this.isDropSeen = true;
@@ -63,7 +62,6 @@
                         drop.classList.toggle("opened");
                         drop.classList.toggle("closed");
                     }
-                    window.console.log(drop);
                 }
                 //this.isDropSeen = !this.isDropSeen;
             }
@@ -81,11 +79,6 @@
     .wrap {
         font-family: 'Open Sans', sans-serif;
     }
-
-
-
-
-
 
     .dropbtn:hover {
         background-color: #ccc;

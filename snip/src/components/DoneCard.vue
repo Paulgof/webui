@@ -3,10 +3,13 @@
         <span class="title mx-2">
             {{ title }}
         </span>
-        <div class="info d-flex justify-content-between mx-2">
-            <div>{{watches}}</div>
-            <div>{{date}}</div>
-            <div>{{likes}} {{dislikes}}</div>
+        <div class="info d-flex px-2">
+            <div class="w-25"><img src="../assets/img/eye.png" alt="eye"/> {{watches}}</div>
+            <div class="flex-fill text-center">{{date}}</div>
+            <div class="w-25">
+                <img src="../assets/img/like.png" alt="like"/>{{likes}}
+                <img src="../assets/img/dislike.png" alt="dislike"/>{{dislikes}}
+            </div>
         </div>
     </div>
 </template>
@@ -40,6 +43,10 @@
 
     }
 
+    div > img {
+        width: 20px;
+    }
+
     .title {
         position: absolute;
         bottom: 25px;
@@ -49,8 +56,11 @@
     .info {
         position: absolute;
         bottom: 5px;
-        width: 92%;
+        width: 100%;
+
     }
+
+
 
 
 </style>

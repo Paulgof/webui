@@ -22,7 +22,7 @@
                 <p>Пн.-Пт.: 8:30 - 17:00</p>
             </div>
         </div>
-        <div  id="click" class="ml-lg-5 my-1 px-2 text-center px-lg-0 my-lg-0">
+        <div @click="buttonListener"  id="click" class="ml-lg-5 my-1 px-2 text-center px-lg-0 my-lg-0">
             <div id="button" class="px-lg-4 px-5 py-2">заказать звонок</div>
         </div>
     </header>
@@ -38,13 +38,18 @@
     import Navbar from "@/components/Navbar";
     import SearchBtn from "@/components/SearchBtn";
     import Dropdown from "@/components/Dropdown";
-
     export default {
         name: "Header",
         components: {
             Dropdown,
             SearchBtn,
             Navbar
+        },
+        methods: {
+            buttonListener() {
+                this.$router.push('/modal');
+                this.$store.dispatch('showModal');
+            }
         }
     }
 </script>
