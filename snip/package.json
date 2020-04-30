@@ -10,7 +10,7 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "core-js": "^3.3.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mobile-device-detect": "^0.3.3",
     "path-browserify": "^1.0.0",
     "upath": "^1.2.0",
